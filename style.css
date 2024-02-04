@@ -80,46 +80,103 @@ float: right;
 
 /*main*/
 
-img {
-    height: 300px;
+#img-section img{
     max-width: 100%;
+    height: 500px;
     width: 100%;
+    aspect-ratio: 1/2;
+
+
+
 }
 #community-section {
     max-width: 100%;
+    width: 100%;
     height: auto;
+    color: #f3f4ef;
     background-color: #779882;
+    text-align: center;
+
+
 }
+
 
 #community-section p, h1 {
     display: flex;
     justify-content: center;
-    align-content: center;
+    /*align-content: center;*/
     margin: 0 auto;
-    color: #f3f4ef;
+    align-items: flex-end;
+
     padding: 20px 10px 5px 10px;
     font-size: 22px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
 }
 
+/* signup section*/
 #sign-up-section {
     background-color:#f3f4ef;
-    height: 600px;
-    margin: 20px 20px 20px 20px;
+    height: 500px;
+    margin: 0 auto;
+
 }
-#fællesskab-heading {
-    font-weight: bold;
-    font-size: 22px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto ;
-}
+
 
 #sign-up-section p {
     line-height: 1.5;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin: 15px;
+}
+#fællesskab-heading {
+     font-weight: bold;
+     font-size: 34px; !important;
+     padding-bottom: 20px;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     margin: 0 auto ;
+ }
+#fællesskabtext {
+    margin-bottom: 50px;
+}
+
+#sign-up-box {
+    width: 350px;
+    height: 400px;
+    background-color:#425348;
+    border-radius: 50px;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+}
+#sign-up-box p {
+    color: #f3f4ef;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 30px;
+}
+.label {
+    height: 40px;
+    width: 200px;
+    background-color: #f3f4ef;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+#sign-up-box button {
+    height: 40px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: #779882;
+    color: #f3f4ef;
+    border-radius: 10px;
+    font-size: 18px;
 }
 
 @media screen and (min-width: 700px){
@@ -128,19 +185,17 @@ img {
 
     }
 
-img {
+#img-section img {
     height: 1000px;
+
 }
-    #community-section p, h1{
-        font-size: 33px;
-        max-width: 100%;
 
-    }
 
-    #sign-up-section p {
+    #sign-up-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         max-width: 1200px;
-        margin: 0 auto;
-        padding-bottom: 30px;
+        padding: 50px 0 30px 0;
 
     }
 
