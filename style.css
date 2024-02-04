@@ -82,6 +82,17 @@ header img {
 
 /*main*/
 
+h1, h2, h3 {
+
+    font-size: 24px;
+    font-weight: bold;
+    color: #3c3c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+}
 #img-section {
     background-color: #779882;
 }
@@ -93,23 +104,17 @@ header img {
 #community-section {
     max-width: 100%;
     width: 100%;
-    /*height: auto;*/
     color: #f3f4ef;
-    /*background-color: #779882;*/
-    text-align: center;
 }
 
 
-#community-section p, #community-section h1 {
+#community-section p {
     display: flex;
     justify-content: center;
-    /*align-content: center;*/
+    align-content: center;
     margin: 0 auto;
-    align-items: flex-end;
-
     padding: 20px 10px 5px 10px;
     font-size: 22px;
-    left: 0;
     width: 100%;
     text-align: center;
 
@@ -132,15 +137,6 @@ header img {
     padding: 10px;
 }
 
-#fællesskab-heading {
-    font-weight: bold;
-    font-size: 24px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
-}
 
 #fællesskabtext {
     margin-bottom: 50px;
@@ -194,15 +190,8 @@ header img {
     max-width: 100%;
     height: auto;
 }
-#together-heading {
-    padding-top: 50px;
-    font-size: 22px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
+
+
 #together-section p {
     line-height: 1.5;
     font-size: 22px;
@@ -211,6 +200,7 @@ header img {
     padding: 10px 10px 15px 10px;
 
 }
+
 #together-button {
     width: fit-content;
     background-color: #779882;
@@ -233,12 +223,14 @@ footer {
     background-color: #425348;
     margin-top: 30px;
 }
-footer nav ul{
+
+footer nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
-footer p{
+
+footer p {
     color: #F5F5F5;
     font-size: 28px;
     display: flex;
@@ -248,6 +240,7 @@ footer p{
     padding-top: 30px;
 
 }
+
 footer li {
     list-style: none;
 
@@ -256,31 +249,26 @@ footer li {
 
 @media screen and (min-width: 700px) {
 
-    #topnav {
-
-    }
-
-    #img-section img {
-        /*height: 1000px;*/
-
-    }
-
-
     #sign-up-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /*max-width: 1200px;*/
         padding: 50px 0 30px 0;
 
     }
 
-    #fællesskab-heading {
+    h1 {
+        font-weight: bold;
+        font-size: 34px;
+
+    }
+
+ h2 {
         font-weight: bold;
         font-size: 34px;
         padding-bottom: 20px;
     }
 
-    #together-heading {
+    h3 {
         font-size: 34px;
         font-weight: bold;
     }
